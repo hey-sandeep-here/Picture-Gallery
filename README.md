@@ -1,2 +1,2 @@
 # Picture-Gallery
-Deploying dumps
+This was developed as a practice tool during my initial stages of frontend development to build confidence....

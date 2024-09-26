@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 style="text-decoration: underline double;">PICTURE BANK</h1>
+        <p><i> With every page-refresh pictures will be different. I hope you enjoy them!</i></p>
+    </header>
+    
+
+    <div class="gallery">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src)">
+            <img src="https://picsum.photos/1200/800?random=1" alt="Gallery Image 1">
+            <div class="gallery-item-caption">Random Image 1</div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src)">
+
+            <img src="https://picsum.photos/1200/800?random=2" alt="Gallery Image 2">
+            <div class="gallery-item-caption">Random Image 2</div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src)">
+            <img src="https://picsum.photos/1200/800?random=3" alt="Gallery Image 3">
+            <div class="gallery-item-caption">Random Image 3</div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src)">
+            <img src="https://picsum.photos/1200/800?random=4" alt="Gallery Image 4">
+            <div class="gallery-item-caption">Random Image 4</div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src)">
+            <img src="https://picsum.photos/1200/800?random=5" alt="Gallery Image 5">
+            <div class="gallery-item-caption">Random Image 5</div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src)">
+            <img src="https://picsum.photos/1200/800?random=6" alt="Gallery Image 6">
+            <div class="gallery-item-caption">Random Image 6</div>
+        </div>
+    </div>
+    
+    <footer>
+        <h6><i>Pictures will be from all over the internet. I do not own any of these pictures.</i></h6>
+        <p><i>For better experience, please use a desktop. and it definitely showing you full size images, so Enjoy!!.</i></p>
+        <h3>-----------  Connect With Me!!   -----------</h3>
+        <a href="https://github.com/hey-sandeep-here" target="_blank"  class="social-icon" onclick="window.open(this.href, '_blank'); return false;"><img src="Images/github_PNG80.png" width="55" height="55" alt="github"></a>
+        <a href="https://www.linkedin.com/in/sandeep-singh-mehta-a5695824b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon" onclick="window.open(this.href, '_blank'); return false;"><img src="Images\linkedin.png" width="55" height="55" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/i.sandeep_05?igsh=cWk3ZTA3cGMzdnNs" target="_blank" class="social-icon" onclick="window.open(this.href, '_blank'); return false;"><img src="Images\instagram-icon-png.webp" width="55" height="55" alt="Instagram"></a>
+    </footer>
+    
+    <!-- Modal for full-size image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullSizeImage">
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
